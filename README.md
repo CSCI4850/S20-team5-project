@@ -9,8 +9,8 @@ This will give you access to all of the necessary files on your local machine.
 
 The demo file for this project is [YahooFinance/yfinance-predict.ipynb](YahooFinance/yfinance-predict.ipynb).
 This should be opened in Jupyter Lab.
-If Jupyter Lab is installed on your system, it can be launched via `jupyter lab` from the root directory of your local copy of the repository.
-Otherwise, follow instructions elsewhere to install Jupyter Lab or use some other means of accessing IPython Notebooks.
+If Jupyter Lab is installed on your system, it can be launched via `jupyter lab` from the root directory of your local copy of the repository, after which you can navigate in your browser to the url it provides (typically `localhost:8888`).
+If Jupyter lab is not installed on your system, follow instructions elsewhere to install Jupyter Lab or use some other means of accessing IPython Notebooks.
 
 A small amount of text is included at the top of the demo file explaining what it is: a simple feed-forward network capable of teasing apart the chaos of a set of time-series stock data and predicting the next day future price.
 The first few code blocks set up the required imports for the project to run.
