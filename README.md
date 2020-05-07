@@ -16,6 +16,8 @@ A small amount of text is included at the top of the demo file explaining what i
 The first few code blocks set up the required imports for the project to run.
 If you don't have these available, you can typically install them easily via `pip3 install <what-was-missing>` (note on some systems this will need to be `pip` rather than `pip3`, but python3 is the language these files were constructed with).
 
+To execute a cell, click on it to select it and Shift+Enter.
+
 The first few blocks of code just demo the basics of how we fetch stock data.
 An example is given to show fetching all the available Apple stock data.
 To fetch this data, you need the "ticker name" for the requested stock (for Apple, this is `AAPL`).
@@ -37,7 +39,7 @@ The line immediately after this trains the network on the generated (and normali
 For time's sake the number of epochs (effectively, learning time) is set low at 60.
 For the video guide, 600 were used to give better performance.
 Try using low numbers initially to see how long it takes to finish processing before increasing it.
-If training speeds are very long and you have a graphics card installed on your system, consider following instructions to install the gpu-enabled version of keras/tensorflow (from personal experience, this works best with Nvidia cards)
+If training speeds are very long and you have a graphics card installed on your system, consider following instructions to install the gpu-enabled version of keras/tensorflow (from personal experience, this works best with Nvidia cards).
 
 The next two blocks show the results of learning.
 The first plots the accuracy and loss of the net with respect to epochs (time, essentially).
