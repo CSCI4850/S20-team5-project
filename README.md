@@ -44,6 +44,8 @@ The accuracy value on a regression problem such as this is not incredibly meanin
 The more important value is the second (bottom) graph of the loss function.
 Assuming you left the default loss function in the model, this is the Mean Squared Error (MSE), which is a statistical measure you might use in regression analysis to say how well some approximation fits some data.
 Zero means it fit the data perfectly, so lower is better (it will never by negative).
+The `model.evaluate...` line under this gets the most recent values from the net (the right-most value from the graphs).
+The first number is loss (bottom graph) and the second number is accuracy (top graph).
 
 The next (final) code block grabs the most recent (chronologically-last) training window and shows the expected value andthe predicted value.
 For a sufficiently good network that has been trained long enough, the predicted values should approach the expected.
