@@ -29,6 +29,9 @@ The next code block establishes the list of ticker names that will be fetched.
 Eight (8) are included in the demo file, but feel free to add or remove content (must have at least 1).
 The next few blocks fetch the data, construct the time series data, and normalize it to prepare for learning.
 
+Two lines under this sets the window width, essentially how many time points (days) are given to the network in order for it to predict the next day.
+This is defaulted to 200, but can be changed if desired (must be > 1).
+
 The code block starting with `model = ...` is the actual neural network model that is being constructed with the keras framework.
 For the short demo, the number of neurons is kept relatively small and there is only one hidden layer with ReLU units.
 Feel free to add/remove layers or change the number of neurons or activations (note, for networks with many layers it is recommended to use the `relu` activation, as the demo does).
@@ -50,7 +53,7 @@ Zero means it fit the data perfectly, so lower is better (it will never by negat
 The `model.evaluate...` line under this gets the most recent values from the net (the right-most value from the graphs).
 The first number is loss (bottom graph) and the second number is accuracy (top graph).
 
-The next (final) code block grabs the most recent (chronologically-last) training window and shows the expected value andthe predicted value.
+The next (final) code block grabs the most recent (chronologically-last) training window and shows the expected value and the predicted value.
 For a sufficiently good network that has been trained long enough, the predicted values should approach the expected.
 The values themselves are overall multiples of the first point in the input window (so basically percentage increase).
 This gives you insight into how well the network is performing on any individual stock as opposed to the MSE analysis for all stocks in the 8-dimensional output space (due to the fact that we predict values for all stocks simultaneously).
