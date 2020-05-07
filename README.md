@@ -37,6 +37,7 @@ The line immediately after this trains the network on the generated (and normali
 For time's sake the number of epochs (effectively, learning time) is set low at 60.
 For the video guide, 600 were used to give better performance.
 Try using low numbers initially to see how long it takes to finish processing before increasing it.
+If training speeds are very long and you have a graphics card installed on your system, consider following instructions to install the gpu-enabled version of keras/tensorflow (from personal experience, this works best with Nvidia cards)
 
 The next two blocks show the results of learning.
 The first plots the accuracy and loss of the net with respect to epochs (time, essentially).
